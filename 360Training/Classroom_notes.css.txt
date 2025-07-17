@@ -1,0 +1,240 @@
+<===================================================================11/7/25=============================================================================>
+CSS: Cascading stylesheet.
+A CSS stylesheet consists of a set of rules interpreted by the web browser and then applied to the corresponding elements such as paragraph, heading, 
+etc in a document.
+A CSS ruleset contains a selector and a declaration block.
+
+The selector specifies which element or elements in the html page the CSS rules apply to.
+Whereas, the declarations within the block determines how the elements are formatted on a webpage.
+Each declaration consists of a property and a value seperated by a colon(:) and ending with a semicolon(;) and the declaration groups surrounded by
+curly brackets.
+
+Applying CSS in HTML:
+1. Inline CSS: It is used to apply a style in a single element/tag. Uses style attribute.
+2. Internal / Page Label CSS: It is used for embedded / internal styles in the same page. Uses the <Style> Tag inside <head> tag.
+3. External CSS: It is used to style the entire webpage. Uses .css extension file.
+
+CSS Selectors:
+Selectors are the names given to the styles in int and ext css stylesheets. Rules associated with the selector will be applied to the element that match
+the selector pattern.
+
+Selectors are one of the most important aspects of CSS as they allow us to target specific elements on our webpage in various ways:
+They can be of many types:
+
+1. Universal selector
+2. Element-Type selector (or tag name selector)
+3. Id selector: used to style a single or unique element in our webpage.
+4. Class selector(.): used to select any html element that has the same class. All elements with that class will be formatted acc to the defined rule.
+5. Descendant selector: 
+6. Child selector
+7. Grouping selector
+
+Text Properties:
+__________________________________________________________________________________________________________________________________________________
+| **Property**                     | **Description**                                  | **Common Values**                                        |
+| -------------------------------- | ------------------------------------------------ | -------------------------------------------------------- |
+| `color`                          | Sets the color of the text                       | `red`, `#ff0000`, `rgb(255,0,0)`                         |
+| `font-size`                      | Controls the size of the text                    | `12px`, `1em`, `larger`, `small`, `%`                    |
+| `font-family`                    | Specifies the font used                          | `Arial`, `Verdana`, `"Times New Roman"`, `sans-serif`    |
+| `font-weight`                    | Controls boldness                                | `normal`, `bold`, `lighter`, `100`–`900`                 |
+| `font-style`                     | Sets italic style                                | `normal`, `italic`, `oblique`                            |
+| `text-align`                     | Aligns text horizontally                         | `left`, `right`, `center`, `justify`                     |
+| `text-decoration`                | Adds decoration (like underline)                 | `none`, `underline`, `overline`, `line-through`, `blink` |
+| `text-transform`                 | Changes case of text                             | `none`, `uppercase`, `lowercase`, `capitalize`           |
+| `letter-spacing`                 | Adds space between letters                       | `normal`, `2px`, `-1px`                                  |
+| `word-spacing`                   | Adds space between words                         | `normal`, `1em`, `5px`                                   |
+| `line-height`                    | Controls space between lines of text             | `normal`, `1.5`, `20px`, `%`                             |
+| `direction`                      | Sets text direction                              | `ltr`, `rtl`                                             |
+| `white-space`                    | Controls whitespace handling                     | `normal`, `nowrap`, `pre`, `pre-line`, `pre-wrap`        |
+| `text-indent`                    | Indents the first line of text                   | `20px`, `2em`, `%`                                       |
+| `vertical-align`                 | Aligns text vertically within its container      | `top`, `middle`, `bottom`, `baseline`                    |
+| `word-break`                     | Controls word wrapping                           | `normal`, `break-all`, `keep-all`, `break-word`          |
+| `overflow-wrap` (or `word-wrap`) | Allows long words to break and wrap to next line | `normal`, `break-word`                                   |
+| `text-overflow`                  | Adds ellipsis when text overflows                | `clip`, `ellipsis`                                       |
+| `writing-mode`                   | Sets the text flow direction                     | `horizontal-tb`, `vertical-rl`, `vertical-lr`            |
+|_`text-shadow`____________________| apply the shadow effects on text_________________| `offset-x offset-y blur-radius color_____________________|
+
+Font Properties:
+_______________________________________________________________________________________________________________________________________________________
+| **Property**     | **Description**                                          | **Possible Values**                                                   |
+| ---------------- | ---------------------------------------------------------| ----------------------------------------------------------------------|
+| `font-family`    | Specifies the font of the text.                          | `"Arial"`, `"Times New Roman"`, `serif`, `sans-serif`, `"Courier New"`|
+| `font-size`      | Sets the size of the font.                               | `medium`, `small`, `large`, `12px`, `1.2em`, `120%`, etc.             |
+| `font-weight`    | Sets the thickness (boldness) of characters.             | `normal`, `bold`, `lighter`, `bolder`, `100` to `900`                 |
+| `font-style`     | Specifies the font style (normal, italic, oblique).      | `normal`, `italic`, `oblique`                                         |
+| `font-variant`   | Controls the use of small-caps letters.                  | `normal`, `small-caps`                                                |
+| `font-stretch`   | Expands or compresses the font width.                    | `normal`, `condensed`, `expanded`, `ultra-condensed`, `extra-expanded`|
+| `line-height`    | Sets the height of lines.                                | `normal`, `1.5`, `150%`, `20px`, `calc(...)`, etc.                    |
+| `letter-spacing` | Controls the space between characters.                   | `normal`, `2px`, `-1px`, `0.1em`, etc.                                |
+| `word-spacing`   | Sets the space between words.                            | `normal`, `5px`, `0.5em`, `-1px`, etc.                                |
+| `text-transform` | Controls capitalization.                                 | `none`, `capitalize`, `uppercase`, `lowercase`                        |
+| `font`           | Shorthand for setting font-style, font-variant,          | Example: `italic small-caps bold 16px/2 Arial, sans-serif`            |
+|__________________|_font-weight, font-size/line-height, and font-family._____|_______________________________________________________________________|                                                                      
+
+
+<=====================================================================14/7/25==================================================================================>
+
+
+Border Properties:
+_______________________________________________________________________________________________________________________________________________________
+| **Property**      | **Description**                                                     | **Common Values**                                         |
+| ----------------- | ------------------------------------------------------------------- | ----------------------------------------------------------|
+| `border`          | Shorthand to set all border properties                              | `1px solid black`, `2px dashed red`, `none`               |
+| `border-width`    | Sets the **thickness** of the border                                | `thin`, `medium`, `thick`, `2px`, `5px`                   |
+| `border-style`    | Sets the **style** of the border                                    | `none`, `solid`, `dashed`, `dotted`, `double`,            |
+                                                                                          | `groove`, `ridge`, `inset`, `outset`                      |
+| `border-color`    | Sets the **color** of the border                                    | `red`, `#333`, `rgba(0,0,0,0.5)`                          |
+| `border-radius`   | Rounds the corners of the border                                    | `5px`, `50%`, `1em`, `0`                                  |
+| `border-top`      | Sets all properties (width, style, color) for **top** border        | `2px solid blue`                                          |
+| `border-right`    | Same for the **right** border                                       | `3px dashed green`                                        |
+| `border-bottom`   | Same for the **bottom** border                                      | `1px dotted gray`                                         |
+| `border-left`     | Same for the **left** border                                        | `4px double orange`                                       |
+| `border-image`    | Uses an image as a border                                           | `url(border.png) 30 round`                                |
+| `border-collapse` | For tables: whether borders collapse or stay separate               | `collapse`, `separate`                                    |
+|_`border-spacing`__| Space between table cell borders when `border-collapse: separate`___|_`0`, `5px`, `10px`________________________________________|
+
+Background Properties:
+_______________________________________________________________________________________________________________________________________________________________
+| **Property**            | **Description**                                            | **Common Values**                                                    |
+| ----------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------- |
+| `background`            | Shorthand for all background properties                    | `url("img.jpg") no-repeat center/cover`, `blue`, `none`              |
+| `background-color`      | Sets the **background color** of an element                | `red`, `#f0f0f0`, `transparent`, `rgba(0,0,0,0.5)`                   |
+| `background-image`      | Sets a **background image**                                | `url("bg.jpg")`, `none`                                              |
+| `background-repeat`     | Defines how the image is repeated                          | `repeat`, `repeat-x`, `repeat-y`, `no-repeat`, `space`, `round`      |
+| `background-position`   | Sets the **starting position** of the background image     | `top left`, `center`, `right bottom`, `10px 20px`                    |
+| `background-size`       | Scales the background image                                | `cover`, `contain`, `100px 200px`, `auto`                            |
+| `background-attachment` | Determines if the background scrolls with the page         | `scroll`, `fixed`, `local`                                           |
+| `background-origin`     | Sets the positioning area of the background image          | `padding-box`, `border-box`, `content-box`                           |
+| `background-clip`       | Defines how far the background color/image extends         | `border-box`, `padding-box`, `content-box`, `text`                   |
+| `background-blend-mode` | Sets how background layers blend together (like Photoshop) | `normal`, `multiply`, `screen`, `overlay`, `darken`, `lighten`, etc. |
+| `width`                 | Sets the width of the element                              | `%` or `px`                                                          |
+|_`height`________________| Sets the height of the elemenet____________________________|_`%` or `px`__________________________________________________________|
+
+Margin Properties:
+_________________________________________________________________________________________________________
+| **Property**    | **Description**                            | **Common Values**                      |
+| --------------- | ------------------------------------------ | -------------------------------------- |
+| `margin`        | Shorthand to set **all 4 margins** at once | `10px`, `10px 20px`, `auto`, `0`, `5%` |
+| `margin-top`    | Sets **space above** the element           | `10px`, `2em`, `auto`                  |
+| `margin-right`  | Sets **space to the right**                | `5px`, `auto`                          |
+| `margin-bottom` | Sets **space below** the element           | `15px`, `0`                            |
+| `margin-left`   | Sets **space to the left**                 | `auto`, `20px`                         |
+|_________________|____________________________________________|________________________________________|
+
+Padding Properties:
+_____________________________________________________________________________________________
+| **Property**     | **Description**                             | **Common Values**        |
+| ---------------- | ------------------------------------------- | ------------------------ |
+| `padding`        | Shorthand to set **all 4 sides** of padding | `10px`, `1em`, `5%`, `0` |
+| `padding-top`    | Sets space **above** the content            | `5px`, `1em`, `0`        |
+| `padding-right`  | Sets space **to the right** of the content  | `10px`, `2em`            |
+| `padding-bottom` | Sets space **below** the content            | `15px`, `0`              |
+| `padding-left`   | Sets space **to the left** of the content   | `20px`, `3%`             |
+|__________________|_____________________________________________|__________________________|
+
+Column Properties:
+
+1. column-count property specifies the no of column in an element should be divided into.
+Syntax: 
+    column-count: number | auto | initial | inherit;
+
+2. column-fill property specifies how to fill the column, balance or not.
+Syntax: 
+    column-fill: balance | auto | initial | inherit;
+
+3. column-gap property specifies gap between the columns.
+Syntax: 
+    column-gap: length | normal | initial | inherit;
+
+4. column-rule is used to set width, style and color of a rules between columns.
+Syntax: 
+    column-rule: width | style | color;
+
+Other Properties:
+
+5. float-property specifies how an element should float on a Webpage
+Syntax:
+    float: none | right | initial | inherit;
+
+6. Display Property specifies the display behaviour (the type of rendering box) of an element.
+Syntax:
+    display: value;
+
+Property Values:
+_______________________________________________________________________________________________________
+| **Value**      | **Description**                                                                    |
+| -------------- | ---------------------------------------------------------------------------------- |
+| `none`         | Hides the element entirely (no layout space)                                       |
+| `block`        | Element starts on a **new line** and takes **full width**                          |
+| `inline`       | Element flows **inline** with text, **no line break**, width/height ignored        |
+| `inline-block` | Like `inline`, but allows setting width and height                                 |
+| `flex`         | Makes a **flex container** for flexible box layout (used with `display: flex`)     |
+| `inline-flex`  | Same as `flex` but flows **inline** with content                                   |
+| `grid`         | Makes the element a **grid container** (used with `display: grid`)                 |
+| `inline-grid`  | Same as `grid`, but flows **inline**                                               |
+| `table`        | Makes the element behave like a **HTML `<table>`**                                 |
+| `table-row`    | Behaves like a `<tr>`                                                              |
+| `table-cell`   | Behaves like a `<td>`                                                              |
+| `list-item`    | Makes element behave like `<li>`, with bullet or number                            |
+| `run-in`       | Rare: depends on context; behaves like inline or block (not supported everywhere)  |
+| `contents`     | Element disappears, but children behave as if in parent context (no box generated) |
+| `inherit`      | Inherits the `display` value from parent                                           |
+| `initial`      | Resets to browser’s default                                                        |
+| `unset`        | Removes explicitly set value (acts as `inherit` or `initial`)                      |
+|________________|____________________________________________________________________________________|
+
+Descendant Selectors:
+We can use these selectors when we need to select an element that is the descendant of another element.
+
+For example: targetting only those anchors that are contained within an unordered list.
+#mydiv{}    #mydiv p{}     #mydiv p span{}
+
+Child Selectors: 
+It used to select those elements that are the direct children of some element.
+A child selector is made up of 2 or more selectors interpreted by a greater than (>) symbol.
+You can use this selector to select the first level of list elements inside a nested list (of more than 1 level).
+
+For Example: we try creating an ordered list <ol>/<li> inside #mylist and write it like:
+            #myList>li{}        ul>li>a{}      or      ul>li>ol>li>a{} (nested lists)
+
+Grouping Selectors:
+Often several selectors in a stylesheet share the same set of style rules declarations. 
+We can group them into a comma-seperated list to minimise the code in your stylesheet.
+It also prevents us from repeating rhe same style over and over again.
+
+Pseudo classes are defined on a special state of an element.
+for example:
+    Style an element with a user moves the mouse over it.
+    Style visited and unvisited links differently.
+    Style an element when it gets focused.
+______________________________________________________________________________________________________________________
+| **Pseudo-Class** | **Description**                              | **Example**                                       |
+| ---------------- | -------------------------------------------- | ------------------------------------------------- |
+| `:hover`         | When mouse hovers over the element           | `a:hover { color: red; }`                         |
+| `:active`        | When element is being clicked                | `button:active { background: green; }`            |
+| `:visited`       | Link that has already been visited           | `a:visited { color: purple; }`                    |
+| `:focus`         | Element is focused (e.g., input box clicked) | `input:focus { border-color: blue; }`             |
+| `:first-child`   | Selects first child of its parent            | `p:first-child { font-weight: bold; }`            |
+| `:last-child`    | Selects last child                           | `li:last-child { color: gray; }`                  |
+| `:nth-child(n)`  | Selects the nth child (1-based index)        | `li:nth-child(2) { color: red; }`                 |
+| `:not(selector)` | Selects all except those matching selector   | `div:not(.highlight) { opacity: 0.5; }`           |
+| `:checked`       | Targets checked input/checkbox/radio         | `input:checked { accent-color: green; }`          |
+| `:disabled`      | Styles disabled form fields                  | `input:disabled { background: #eee; }`            |
+| `:enabled`       | Styles enabled form fields                   | `input:enabled { border: 1px solid; }`            |
+| `:empty`         | Targets elements with no children or content | `div:empty { display: none; }`                    |
+| `:first-of-type` | First of its type among siblings             | `p:first-of-type { text-decoration: underline; }` |
+| `:last-of-type`  | Last of its type among siblings              | `h2:last-of-type { color: teal; }`                |
+|__________________|______________________________________________|___________________________________________________|
+
+Position Property:
+
+The CSS position property is used to define the position of an element of a webpage.
+The location of the positioned element is set with the four properties: top, left, right, and bottom. 
+These properties only work when the position property is set to have different positioning behaviours.
+
+Position porperties have the following 5 values:
+1. static (def)
+2. relative
+3. absolute
+4. fixed
+5. sticky

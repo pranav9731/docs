@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(250, 235, 215)
+}
+.container{
+    height: max-content;
+    border-style: groove;
+    border-radius: 3px;
+    border-width: 20px;
+    border-left-color: blue;
+    border-right-color: blueviolet;
+    border-top-color: aliceblue;
+    border-bottom-color: aqua;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    background-image: url("https://picsum.photos/seed/100/90/180/");
+    background-repeat: no-repeat;
+    background-size: cover;
+    column-count: 6;
+    /*column-gap: 10px;*/
+    column-rule: 4px;
+}
+.pic{
+    border-radius: 50%;
+}
+
+

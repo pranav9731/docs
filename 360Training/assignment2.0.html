@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<title> Look at the page blud</title>
+
+<center>
+<head>
+    <style>
+        .header{
+            background-color: brown;
+        }
+        .header>td{
+            padding: 10px;
+        }
+        .control{
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: blue;
+            padding: 3px 10px;
+            box-shadow: 1px 1px 2px black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .control:hover{
+            box-shadow: 5px 5px 10px blue;
+            background-color: aqua;
+            color: rgb(0, 0, 255);
+        }
+        .control:focus{
+            box-sizing: border-box;
+        }
+        .address{
+            padding: 3px 10px;
+            box-shadow: 1px 1px 2px black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: blue;
+        }
+        .address:hover{
+            box-shadow: 5px 5px 10px blue;
+            background-color: rgb(255, 255, 0);
+            color: rgb(0, 0, 255);
+        }
+        .button{
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .button:hover{
+            background-color: blueviolet;
+            box-shadow: 1px 1px 1px black;
+        }
+    </style>
+</head>
+
+<body>
+        <form action="GNIOT.html" method="get">
+        <b><font face = "Sans-serif"><table bgcolor="#f43440" cellpadding = '10' style = "border: 3px dotted black; color: white;">
+            <tr class = "header">
+            <td colspan="2" align="center">Student Registration form using Table in HTML</td>
+            </tr>
+            <tr>
+                <td><label> First Name </label></td>
+                <td><input type="text" class = "control" name="t1" value="" placeholder="Pranav" size="30"></input>
+                <label> (Max 50 Characters Allowed) </label></td>
+            </tr>
+            <tr>
+                <td><label> Last Name </label></td>
+                <td><input type="text" class = "control" name="t2" value="" placeholder="Trivedi" size="30"></input>
+                <label> (Max 50 Characters Allowed) </label></td>
+            </tr>
+            <tr>
+                <td><label> Email ID</label></td>
+                <td><input type="email" class = "control" name="t3" value="" placeholder="trivedipranav366@gmail.com" size ="30"></input></td>
+            </tr>
+            <tr>
+                <td><label> Mobile Number </label></td>
+                <td><input type="text" class = "control" name="t4" value="" placeholder="98396XXXXX" size="30" inputmode="numeric" pattern="[0-9]*"></input></td>
+            </tr>
+            <tr>
+                <td><label> Choose Color </label></td>
+                <td class = "control">
+                    <input type="radio" name="t10" value="male" /><label>Male</label>
+                    <input type="radio" name="t10" value="female" /><label>Female</label>
+                </td>
+            </tr>
+            <tr>
+            <td>
+            <label>Date of Birth (DOB):</label><br>
+            <td class = "control">
+            <select name="day">
+            <option>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+            </select>
+
+            <select name="month">
+            <option>Month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+            </select>
+            <select name="year">
+            <option>Year</option>
+            <option>1970</option><option>1971</option><option>1972</option><option>1973</option><option>1974</option>
+            <option>1975</option><option>1976</option><option>1977</option><option>1978</option><option>1979</option>
+            <option>1980</option><option>1981</option><option>1982</option><option>1983</option><option>1984</option>
+            <option>1985</option><option>1986</option><option>1987</option><option>1988</option><option>1989</option>
+            <option>1990</option><option>1991</option><option>1992</option><option>1993</option><option>1994</option>
+            <option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option>
+            <option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option>
+            <option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option>
+            <option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option>
+            <option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option>
+            <option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option>
+            <option>2025</option><option>2026</option><option>2027</option><option>2028</option><option>2029</option>
+            <option>2030</option><option>2031</option><option>2032</option><option>2033</option><option>2034</option>
+            <option>2035</option><option>2036</option><option>2037</option><option>2038</option><option>2039</option>
+            <option>2040</option><option>2041</option><option>2042</option><option>2043</option><option>2044</option>
+            <option>2045</option><option>2046</option><option>2047</option><option>2048</option><option>2049</option>
+            <option>2050</option>
+            </select>   
+            </td>
+            </tr>
+            <tr>
+                <td><label> Address </label></td>
+                <td>
+                    <textarea name = "t18" class = "address" rows = "8" cols="40" width="40px"></textarea> 
+                </td>
+            </tr>
+            <tr>
+                <td><label> City </label></td>
+                <td><input type="text" class = "control" name="t69" value="" placeholder="Lucknow" size ="30"></input>
+                <label> (Max 50 Characters Allowed) </label></td>
+            </tr>
+            <tr>
+                <td><label> Pin Code </label></td>
+                <td><input type="text" class = "control" name="t421" value="" placeholder="226031" size="30" inputmode="numeric" pattern="[0-9]*"></input>
+                <label> (Max 6 numbers Allowed) </label></td>
+            </tr>
+            <tr>
+                <td><label> State </label></td>
+                <td><input type="text" class = "control" name="t69" value="" placeholder="Uttar Pradesh"  size ="30"></input>
+                <label> (Max 50 Characters Allowed) </label></td>
+            </tr>
+            <tr>
+                <td><label> Country </label></td>
+                <td><input type="text" class = "control" name="t69" value="" placeholder="India"  size ="30"></input>
+            </tr>
+            <tr>
+                <td><label> Hobbies</label></td>
+                <td class = "control">
+                    <input type="checkbox" name="t11" value="Noida"  size ="30"></input><label>Skating</label>
+                    <input type="checkbox" name="t12" value="Delhi"  size ="30"></input><label>Swimming</label>
+                    <input type="checkbox" name="t13" value="Pune"  size ="30"></input><label>Singing</label>
+                    <input type="checkbox" name="t14" value="Lucknow"  size ="30"></input><label>Surfing</label>
+                    <br>
+                    <input type="checkbox">
+                    <label> Others </label>
+                    <input type="text" class = "address" name="t50" value="" placeholder="ex. texting"></input>
+                <label> (Max 50 Characters Allowed) </label></td>
+                </td>
+            </tr>
+            <tr>
+                <td><label> Qualifications</label></td>
+                <td class = "control">
+                    <input type="checkbox" name="t110" value="Noida"  size ="30"></input><label>High School (10th)</label><br>
+                    <input type="checkbox" name="t110" value="Delhi"  size ="30"></input><label>Higher School (12th)</label><br>
+                    <input type="checkbox" name="t110" value="Pune"  size ="30"></input><label>Graduation(Bachelors)</label><br>
+                    <input type="checkbox" name="t110" value="Lucknow"  size ="30"></input><label>Post Graduation(Masters)</label><br>
+                    <input type="checkbox" name="t110" value="Lucknow"  size ="30"></input><label>PHD</label><br>
+                 </td>   
+            </tr>
+            <tr>
+                <td><label> Qualifications</label></td>
+                <td class = "control">
+                    <input type="checkbox" name="t110" value="Noida"  size ="30"></input><label>BCA(Bachelors of Computer Applications)</label><br>
+                    <input type="checkbox" name="t110" value="Delhi"  size ="30"></input><label>BBA(Bachelors of Business Administration)</label><br>
+                    <input type="checkbox" name="t110" value="Pune"  size ="30"></input><label>B.Com(Bachelors of Commerce)</label><br>
+                    <input type="checkbox" name="t110" value="Lucknow"  size ="30"><label>B.Sc(Bachelors of Science)</label><br>
+                    <input type="checkbox" name="t110" value="Lucknow"  size ="30"><label>MCA(Masters of Computer Applications)</label><br>
+                    <input type="checkbox" name="t110" value="Pune"  size ="30"><label>MBA(Masters of Business Administration)</label><br>
+                    <input type="checkbox" name="t110" value="Lucknow"  size ="30"></input><label>M.Com(Masters of Commerce)</label><br>
+                    <input type="checkbox" name="t110" value="Lucknow"  size ="30"></input><label>M.Sc(Masters of Science)</label><br>
+                 </td>   
+            </tr>
+            <tr class = "header">
+                <td colspan="2" align = "center">
+                    <input type="reset" class = "button" name="t15" value="Reset" style="width:120px; height:40px;"></input>
+                    <input type="submit" class = "button" name="t17" value="Submit" style="width:120px; height:40px;"></input>
+                </td>
+            </tr>
+
+            <tr>
+
+            </tr>
+        </table></b></font>
+        <br>
+    </form>
+    <br>
+    </center>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<==========================================================3/7/25=====================================================================================================>
+Webpage, Website, Web Server, Web Browser, Web Client
+*A webpage is a single unit designed to contain all the given information.
+*A website is a group of web pages that are under in a single domain (or a single url).
+*A webServer is a computer that stores websites and deliver web pages to the Client when requested / handles the request given by the User to the Client.
+*A webBrowser is a software that enables us to access different urls/Websites/webpages on user request.
+*A webClient is software/device that sends a request to a web Server & recieves response.
+
+Internet vs Intranet:
+    Internet is the international network on the (global) basis. 
+    Intranet is the (local) network.
+
+DNS: Gives Address / Converts ip into domain names.
+
+Types of Websites:
+    *Static Website: A static website is a webstie that cannot be changed according to user/user.
+    *Dynamic Website:  A static website is a webstie that can be changed according to user/user.
+
+WWW: openspace used to view, locate multimedia bsed docs for the internet.
+SGML: Standralised gen markup language.
+Tim Berner Lee created HTML in 1991 and WWW in the 1990s.
+
+<===========================================================4/7/25=====================================================================================================>
+HTML: 
+    Language used to develop web pages.
+    Hypertext: Text used for linking.
+    Markup Language: computer language that is used to apply layout and formatting conventions in a text doc. 
+    W3C stands for World Wide Web Consortium (W3C) founded in 1994. 
+    W3C Provides standard to html codes n websites.
+    Defines a set of commands for creating the hypertext documents.
+    HTML pages are saved as plain text docs with the .htm or .html ext
+
+Tags:
+    Tags are the HTML code words.
+    Instructions directly embedded directly in the text to the document.
+    written in the <> brackets.
+
+Types of Tag:
+    There are 2 types of Tags:
+        *Container Tag (Pair Tag): opening + closing tag (eg. <html>, <body>, etc)
+            1. Block Level tag
+            2. Inline tag
+        *Empty Tag (Singular Tag): only one tag needed (eg. <p>, <br>, etc)
+
+Tag Attributes:
+    HTML tags require additional information supplied to them. 
+    Eg. when any picture is placed on the screen, info like height & width are specified.
+    Attributes are used to provide seperate additional info to html tags.
+    Attributes are written immediately following the tag, seperated by the space.
+    Multiple attributes can be associated with a tag, also seperated by a space.
+    
+HTML Element:
+    *An individual component of html representing meaning or semantics in a doc.
+
+                                                              Element        
+                                                    ______________|___________                                                                               
+                                                    |             |          | 
+                                                Start Tag      Content    End Tag
+                                           <p class = "RIP">    abcde      </p>
+
+Tags and their purpose:
+
+<title>: To display title of web page.
+<link>: It is used to add favicon icon in title bar as well as link external css file with webpage.
+Attributes of link tag:
+    
+    1. href tag: Used to define the url of icon/css file.
+    
+    2. rel: it is used to define relation between files linked with ur webpage. 
+    Types: a.icon b.stylesheet
+    Syntax: <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="">
+    
+    3. url:
+    a. absolute url 
+    b. relative url
+
+<body> tag:
+    Attributes of <body> tag:
+        a. bgcolor: Specifies the background color of the web page. Example: <body bgcolor="yellow">
+        b. background: Sets an image as the background of the web page. Example: <body background="image.jpg">
+        c. text: Sets the color of the text in the web page. Example: <body text="black">
+    other tags:    
+        d. link: Sets the color of unvisited links. Example: <body link="blue">
+        e. alink: Sets the color of active links. Example: <body alink="red">
+        f. vlink: Sets the color of visited links. Example: <body vlink="purple">
+
+Attribute of <hx> tag: <!--where x is a no. -->
+        <h1> to <h6>
+        h1/h2: Main Heading
+        h3/h4/h5/h6: Sub Heading
+    other tags:
+        a. id  (the id of your tag, unique and allows fetching over time)
+        b. name  (pretty niche tag used to determine the name of the field)
+        c. class (make sure your classname is recognised by the code)
+        d. style (js make a new file for styling w css lmao)
+        e. align (right left centre stuff)
+
+<=====================================================================8/7/25===========================================================================================>
+
+<hr> tag: Used to draw a horizontal line in a webpage.
+    attributes:
+    1. width
+    2. size
+    3. color
+    4. align
+
+<br> tag: Used to break between lines.
+<marquee> tag: Used to display scrolling text or image on a webpage. It is a pair tag
+    Attributes:
+        1. Direction
+        2. bgcolor
+        3. behavior: scroll slide, alternative
+        4. width
+        5. height
+        6. scrollamount
+        7. loop
+
+Text formatting tags:
+    1. <b>      : display text in bold format
+    2. <i>      : display text in italic format
+    3. <em>     : '' in emphasize 
+    4. <u>      : used to underline the text.
+    5. <abbr>   : behaviour/abbrivation
+    6. <sub>    : subscript
+    7. <sup>    : superscript
+    8. <strong> : bold 
+    9. <mark>   : highlight
+    10.<pre>    : prints the text as it is.
+        
+Attributes:
+    1. src: Define source/url of the image.
+    2. width
+    3. height
+    4. hspace
+    5. vspace
+    6. alt
+
+<font> tags: used to apply the style of your text.
+    1. face     2. color    3. size
+    
+<list> tags: used to display text in a list form. what provides 3 types of list:
+    1. Ordered List: <ol>
+        To create an Ordered list HTML provide <ol> tag. It is pair tag.
+        li is the sub-tag of ol. It stands for "list" defining the elements inside of the list.
+        attributes:
+            a. type: defines number, small/capital letter alphabets
+            b. start: redefine the initial position
+    2. Unordered List: <ul>
+        To create an unordered list HTML provide <ul> tag. A solo tag.
+    3. Description Tag: <dl> is used to create description lists in html. Description list has 2 sub tags, i.e
+        1. <dt>: defines definition terms.
+        2. <dd>: used to provide the description.
+
+<======================================================================9/7/25==========================================================================================>    
+
+<iframe> Tag: Used to embed any html document or other resource like google map, youtube video in a web page. 
+<div> Tag: It is a container tag that is used to provide common style and alignment characterstics.
+            Div tag has one important attribute called align attribute that is used to align the data either left or right.   
+<table> Tag: It is used to display data in the form of row and column form / tabular form. 
+Tables are not only used for creating the data but also for designing the layout of the website.
+    Attributes:
+        1. Tr(Table Row)                                   2. Td (Table Data)                                3. Th (Table Heading) 
+
+<valign>:
+    used to set the vertical alignment of a data inside a row or column in a table. It takes 3 values: 
+        1. Top              2. Middle           3. Bottom
+
+<span> classes:
+    Colspan is used to merge more than one column in a single row.
+    Rowspan is used to merge multiple columns of different rows together.
+
+<====================================================================10/7/25===========================================================================================>
+
+<form> Tag: defines an html form that contains interactive controls which enables the user to submit information to a web page.
+An HTML form is used to capture user information such as username, password, address details, credit card information, etc.
+To create a form, you can nest form-associated elements inside the opening/closing <form> tags.
+
+    Attributes:
+        1. action                                          2. method                                         3. enctype
+    
+    1. action specifies URL/URI of the page thaat will process the form.
+    2. method specifies the HTTP method to use when the form is submitted. 
+    [possible values: Get, Post]
+    3. enctype specifies the content type used to encode the form data set when it's submitted to the server. 
+    [possible values: 1. application/x-www-form-urlencoded (default)  2. multipart/form-data (use when uploading files)]
+
+    Form associated elements:                                                                                           2. type
+    <input>: create different interactive input controls. (textbox, btns)                                               |-tent       |-number
+    Attributes:                                                                                                         |-password   |-btn: simple, submit, reset
+        1. name         2. type         3. value        4. required         5. placeholder                              |-email      |-submit
+                                                                                                                        |-date       |-reset
+    <textarea>: Used to create multiline textbox. It has 3 important attributes:  1. main 2. rows 3. cols               |-time       
+    <button>: Used to create clickable redirects enclosed inside a button-like space.                                   |-color
+    <select>: creates dropdown menu. Uses <option> for implementing elements with choices.                              |-radio
+    <fieldset>: Groups Data. Used with <Legend> to describe the group.                                                  |-checkbox
+    <label>: Defines a text label for a form input. Improves accessibility and clickable <input> uses.                                                                                                           |-url
+
+Character Entities: Characters with special meaning in html. Can be displayed on the browser using html.
+    It has the following 3 parts:
+    1. Ambersand (&)
+    2. Entity Name/number (code)
+    3. Semicolon (;)
+
+Non-Breaking Space = &nbsp;
+Less than = &lt;
+Greater than = &gt;
+Ampersand = &amp;
+Quotation mark = &quot;
+Apostrophe = &apos;
+Dollar = &dollar;
+Cent = &cent;
+Pound = &pound;
+Yen = &Yen;
+Copyright = &copy;
+Bullet = &bull;
+en dash(-) = &ndash;
+emdash(--) = &mdash;
+(...) = &hellip;
+trademark = &trade;
+Arrows = &larr; &rarr &uarr; &darr;
+
